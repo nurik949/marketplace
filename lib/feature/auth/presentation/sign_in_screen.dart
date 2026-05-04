@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:marketplace/feature/auth/widgets/rich_text.dart';
+import 'package:marketplace/feature/main/presentation/home_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../../../Test.dart';
 import '../widgets/app_text_form_field.dart';
 import '../widgets/auth_body.dart';
 
@@ -37,7 +37,7 @@ class _SignInScreenState extends State<SignInScreen> {
               content: Text('Вы успешно вошли')));
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => HomeScreen()),
+            MaterialPageRoute(builder: (context) => HomeScreen1()),
           );
         }
       }

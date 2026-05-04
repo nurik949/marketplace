@@ -52,10 +52,10 @@ class _OnbordingState extends State<Onbording> {
           ),
           child: Column(
             children: [
-              SizedBox(height: 20,),
+              SizedBox(height: 15,),
               Text('Look Good, Feel Good',style: TextStyle(color: Color(0xFFF5F8FB),fontSize: 30),),
               Text('Create your individual & unique style and\n                  look amazing everyday.',style: TextStyle(color: Color(0xFF8F959E),fontSize: 15),),
-              SizedBox(height: 15,),
+              SizedBox(height: 10,),
               SizedBox(
                 height: 70,
                 child: ListView.builder(
@@ -75,8 +75,11 @@ class _OnbordingState extends State<Onbording> {
                       );
                     }),
               ),
-              SizedBox(height: 6,),
-              Text('Skip',style: TextStyle(color: Color(0xFF8F959E)),),
+              SizedBox(height: 2,),
+              TextButton(onPressed: (){
+                Navigator.pushReplacementNamed(context, '/login');
+              }, child: Text('Skip',style: TextStyle(color: Color(0xFF8F959E))),
+              )
             ],
           ),
         ),

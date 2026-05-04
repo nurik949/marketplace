@@ -32,7 +32,7 @@ class _SplashscreenState extends State<Splashscreen> {
       if (session != null) {
         Navigator.pushReplacementNamed(context, '/home');
       }else {
-        Navigator.pushReplacementNamed(context, '/login');
+        Navigator.pushReplacementNamed(context, '/Onboarding');
       }
     } catch (e) {
       if(!mounted) return;

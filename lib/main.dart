@@ -9,7 +9,9 @@ import 'package:marketplace/feature/auth/presentation/sign_up_screen.dart';
 import 'package:marketplace/feature/auth/presentation/splashScreen.dart';
 import 'package:marketplace/feature/auth/presentation/verification_screen.dart';
 import 'package:marketplace/feature/auth/widgets/auth_body.dart';
-import 'package:marketplace/feature/main/home_screen.dart';
+import 'package:marketplace/feature/main/presentation/description_Screen.dart';
+import 'package:marketplace/feature/main/presentation/home_screen.dart';
+import 'package:marketplace/feature/main/presentation/products_more.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'Test.dart';
@@ -39,14 +41,15 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => Splashscreen(),
-      //   '/register': (context) => SignUpScreen(),
-      //   '/login': (context) => SignInScreen(),
-      //   '/home': (context) => HomeScreen(),
-      // },
-     home: HomeScreen1(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Splashscreen(),
+        '/register': (context) => SignUpScreen(),
+        '/login': (context) => SignInScreen(),
+        '/home': (context) => HomeScreen1(),
+        '/Onboarding': (context) => Onbording(),
+      },
+      //home: description(),
     );
   }
 }
